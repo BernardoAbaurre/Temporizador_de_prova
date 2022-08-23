@@ -8,6 +8,7 @@ function checar()
         document.getElementById('inputM').style.display = "none"
         modo = hPm
         document.getElementById('horas').focus()
+        resultadoConvTXT.innerHTML= 'Resultado: '
     }
     else
     {
@@ -15,6 +16,7 @@ function checar()
         document.getElementById('inputH').style.display = "none"
         modo = mPh
         document.getElementById('minutos').focus()
+        resultadoConvTXT.innerHTML= 'Resultado: '
     }
 }
 
@@ -22,6 +24,7 @@ function converter()
 {
     var inputH = Number(document.getElementById('horas').value)
     var inputM = Number(document.getElementById('minutos').value)
+    var inputMH = Number(document.getElementById('minutosH').value)
     var resultadoConvTXT = document.getElementById('resultadoConvTXT')
     var resultadoConv = 0
     var resto = 0 
@@ -30,7 +33,11 @@ function converter()
 
     if(modo == hPm)
     {
-        resultadoConv = inputH * 60
+        if (isNaN(inputH) == true)
+        {
+            inputH = Number(document.getElementById('horas').value.replace(',','.'))
+        }
+        resultadoConv = (inputH * 60) + inputMH
         resultadoConvTXT.innerHTML += `${resultadoConv} minutos`
         document.getElementById('horas').focus()
     }

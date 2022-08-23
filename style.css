@@ -20,6 +20,10 @@ input[type = button]
 {
     margin-top: 20px;
 }
+#horas
+{
+    margin-bottom: 10px;
+}
 #tempo
 {
     margin-bottom: 10px;
