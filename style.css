@@ -16,7 +16,11 @@ section
     margin-left: 20px;
     margin-bottom: 20px;
 }
-#converterBTN
+input[type = button]
 {
     margin-top: 20px;
+}
+#tempo
+{
+    margin-bottom: 10px;
 }

@@ -24,7 +24,16 @@
             <input type="text" name="minutos" id="minutos">
         </nav>
         <input type="button" value="Converter" onclick="converter()" id="converterBTN">
-        <p id="resultadoTXT">Resultado: </p>
+        <p id="resultadoConvTXT">Resultado: </p>
+    </section>
+    <h1>Tempo por questão</h1>
+    <section>
+        <label for="tempo">Tempo total(min):</label>
+        <input type="text" name="tempo" id="tempo"><br>
+        <label for="nQuestoes">Número de questões:</label>
+        <input type="text" name="nQuestoes" id="nQuestoes"><br>
+        <input type="button" value="Calcular" onclick="tempoQ()" id="tempoQBTN">
+        <p id="resultadoTempoQTXT">Resultado: </p>
     </section>
     <script src="script.js"></script>
 </body>
