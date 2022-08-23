@@ -1,0 +1,22 @@
+body
+{
+    font: 15pt arial;
+    text-align: center;
+}
+section
+{
+    background-color: lightgray;
+    padding: 20px;
+    width: fit-content;
+    margin: auto;
+    border-radius: 10px;
+}
+#mPh
+{
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+#converterBTN
+{
+    margin-top: 20px;
+}
